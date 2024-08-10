@@ -1,12 +1,9 @@
 import {Logo} from "./Logo";
-import {Search} from "./Search";
-import {NumResults} from "./NumResults";
 
-export function NavBar() {
+export function NavBar( { children }) {
 
     return <nav className="nav-bar">
         <Logo/>
-        <Search/>
-        <NumResults/>
+        {children}
     </nav>
 }
